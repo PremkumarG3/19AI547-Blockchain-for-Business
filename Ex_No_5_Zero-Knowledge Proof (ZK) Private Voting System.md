@@ -3,24 +3,26 @@
 To implement a fully private and transparent voting system using Zero-Knowledge Proofs (ZKPs). This ensures that votes are counted fairly without revealing who voted for whom.
 
 # Algorithm:
-Step 1: Voter Registration
-Each voter generates a secret vote key and submits a commitment (hashed vote) to the contract.
 
+Step 1: Each voter creates a secret and makes a hidden (hashed) commitment of their vote.
 
-Step 2: Voting Process
-Voters submit their votes privately using a hash, without revealing their choice.
+Step 2: Voters register by submitting their hidden commitment to the smart contract.
 
+Step 3: During the voting period, voters wait without revealing their actual vote.
 
-Step 3: ZK Verification
-The contract verifies if a vote belongs to a registered voter but does not reveal the actual vote.
+Step 4: After voting ends, voters reveal their secret and choice to the contract.
 
+Step 5: The contract checks if the revealed vote matches the original commitment and counts it.
 
-Step 4: Vote Counting
-Once voting ends, the contract reveals the final tally without linking votes to individuals.
+Step 6: Finally, the total votes are announced without revealing who voted for whom.
 
 
 
 # Program:
+
+### Developed by: Prem Kumar G
+### Register number: 212223230158
+### Date: 28/04/2025
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -76,4 +78,27 @@ Prevents vote tampering while maintaining voter privacy.
 
 Mimics real-world ZK voting applications in governance and DAOs.
 
+# Output:
+
+### Register voter
+
+![alt text](<Screenshot 2025-04-28 132632.png>)
+
+### Reveal vote
+
+![alt text](<Screenshot 2025-04-28 132708.png>)
+![alt text](<Screenshot 2025-04-28 132904.png>)
+
+### Register voter for new user
+
+![alt text](<Screenshot 2025-04-28 132936.png>)
+
+### Reveal vote
+
+![alt text](<Screenshot 2025-04-28 133007.png>)
+![alt text](<Screenshot 2025-04-28 133044.png>)
+
+
 # RESULT: 
+
+Thus, To implement a fully private and transparent voting system using Zero-Knowledge Proofs (ZKPs). This ensures that votes are counted fairly without revealing who voted for whom is successfully executed.
