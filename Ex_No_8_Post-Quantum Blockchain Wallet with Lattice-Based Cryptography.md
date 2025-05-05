@@ -1,31 +1,30 @@
 # Experiment 8: Post-Quantum Blockchain Wallet with Lattice-Based Cryptography
+
 # Aim:
+
 To create a quantum-resistant wallet using lattice-based cryptography instead of traditional ECDSA, ensuring that future quantum computers cannot break private keys.
 
 # Algorithm:
-## Step 1: Understanding Quantum Threat to Blockchain
-ECDSA-based wallets are vulnerable to quantum computers.
 
+Step 1: Understand Quantum Threat: ECDSA-based wallets are vulnerable to quantum attacks; lattice-based cryptography (e.g., NTRU, CRYSTALS-Kyber) is quantum-resistant.
 
-Lattice-based cryptography (e.g., NTRU, CRYSTALS-Kyber) provides quantum resistance.
+Step 2: Register User: User registers with a quantum-safe public key hash.
 
+Step 3: Store User Data: Store the hashed lattice-based public key and track user registration.
 
-## Step 2: Implement Lattice-Based Signature Scheme
-Use precomputed NTRU-based public-private keys for authentication.
+Step 4: Transaction Setup: For sending funds, users must be registered and have sufficient balance.
 
+Step 5: Signature Validation: Users must provide a quantum-resistant signature (hashed public key) for transaction validation.
 
-Store hashed lattice-based signatures instead of traditional Ethereum signatures.
+Step 6: Transaction Execution: After signature verification, update balances between the sender and recipient.
 
-
-## Step 3: Secure Transactions
-Users sign transactions using lattice cryptographic proofs.
-
-
-The smart contract verifies the proof before allowing transactions.
-
+Step 7: Event Logging: Emit events to confirm user registration and successful transaction verification.
 
 
 # Program:
+
+### Developed by: Prem Kumar G
+### Register number: 212223230158
 
 (Solidity does not natively support lattice cryptography yet, but we simulate it using custom hash-based authentication.)
 ```
@@ -66,6 +65,7 @@ contract PostQuantumWallet {
 ```
 
 # Expected Output:
+
 Users register using a post-quantum secure public key.
 
 
@@ -75,8 +75,8 @@ Transactions require a quantum-resistant signature for authentication.
 If a traditional quantum-vulnerable hash is used, the transaction fails.
 
 
-# RESULT : 
-High-Level Overview:
+# High-Level Overview:
+
 First quantum-safe Ethereum-compatible wallet prototype.
 
 
@@ -88,3 +88,26 @@ Demonstrates how Ethereum will transition to post-quantum security.
 
 Inspired by NIST’s post-quantum cryptography competition.
 
+# OUTPUT:
+
+## SENDER ACCOUNT REGISTERATION OUTPUT
+![alt text](<Screenshot 2025-05-05 142807-1.png>)
+
+## RECEIVER ACCOUNT REGISTERATION OUTPUT
+![alt text](<Screenshot 2025-05-05 142702.png>)
+
+## SENDER BALANCE OUTPUT
+![alt text](<Screenshot 2025-05-05 142946.png>)
+
+## GENERATE SIGNATURE
+![alt text](<Screenshot 2025-05-05 143128.png>)
+
+## SENDER TRANSFER AMOUNT TO RECEIVER
+![alt text](<Screenshot 2025-05-05 143216.png>)
+
+## RECEIVER BALANCE AFTER TRANSACTION
+![alt text](<Screenshot 2025-05-05 143245.png>)
+
+# RESULT: 
+
+Thus, to create a quantum-resistant wallet using lattice-based cryptography instead of traditional ECDSA, ensuring that future quantum computers cannot break private keys is executed successfully.
