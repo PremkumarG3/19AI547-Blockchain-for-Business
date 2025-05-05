@@ -85,17 +85,17 @@ contract AIPoweredNegotiation {
 
 # Expected Output:
 
-Buyers submit offers, and the contract auto-negotiates the price.
+### Buyers submit offers, and the contract auto-negotiates the price.
 
 ![alt text](<Screenshot 2025-05-05 133412.png>)
 ![alt text](<Screenshot 2025-05-05 133600.png>)
 
 
-If the buyer’s offer is fair, the deal is executed.
+### If the buyer’s offer is fair, the deal is executed.
 
 ![alt text](<Screenshot 2025-05-05 134853.png>)
 
-If the offer is too low, the contract suggests a counteroffer.
+### If the offer is too low, the contract suggests a counteroffer.
 
 ![alt text](<Screenshot 2025-05-05 134048.png>)
 
