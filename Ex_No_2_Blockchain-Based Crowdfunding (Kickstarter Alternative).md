@@ -83,4 +83,4 @@ Campaign Output :
 ![alt text](<campaign output.png>)
 
 # RESULT: 
-   Thus, to create a decentralized crowdfunding platform where donors contribute funds only if the campaign goal is met is executed successfully.
+   Thus, to create a decentralized crowdfunding platform where donors contribute funds only if the campaign goal is met is executed successfully. 
